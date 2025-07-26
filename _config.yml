@@ -1,0 +1,43 @@
+# _config.yml
+
+title: Mon Site
+description: Une brève description de mon site web.
+baseurl: "" # Le sous-répertoire de votre site, ex: /blog
+url: "https://lovable.dev/projects/ef7eb185-0284-4e94-b407-0ea47e1017a1" # L'URL de base de votre site
+
+# Auteur
+author:
+  name: maxim lariviere-prive
+  email: maximlprive90@gmail.com
+# Thème (par exemple minima pour GitHub Pages)
+theme: minima
+
+# Répertoires à inclure ou exclure
+include:
+  - _pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Markdown processing
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Permaliens
+permalink: /:categories/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Langue du site
+lang: fr
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
